@@ -199,7 +199,6 @@ public class ArrayList<E> implements List<E>, Cloneable{
 	@SuppressWarnings("unchecked")
 	public <T> T[] toArray(T[] a) {
 		if (a.length < size) {
-		
 			return (T[]) Arrays.copyOf(array, size, a.getClass());
 		}
 		System.arraycopy(array, 0, a, 0, size);
